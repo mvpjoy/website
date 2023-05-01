@@ -82,7 +82,7 @@ export default function WorkSection() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href={workInfo[currentWorkIndex].link}
+              href={workInfo[currentWorkIndex]?.link || ""}
             >
               <button className="btn-primary">Visit Site</button>
             </Link>
