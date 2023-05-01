@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       <div className="hidden md:block">
         <Link href="mailto:arvind@mvpjoy.com">
-          <button className="font-semibold">Let's Talk</button>
+          <button className="font-semibold">Let&apos;s Talk</button>
         </Link>
       </div>
     </header>

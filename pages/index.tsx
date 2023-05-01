@@ -35,14 +35,14 @@ export default function Home() {
           </div>
 
           <p className="max-w-3xl mx-auto text-center mt-6 text-lg text-slate-600">
-            Launch your startup confidently in just 10 days with our agency's
-            expert guidance. We'll build a product that your customers will
-            love.
+            Launch your startup confidently in just 10 days with our
+            agency&apos;s expert guidance. We&apos;ll build a product that your
+            customers will love.
           </p>
           <div className="text-center mt-10">
             <Link href="mailto:arvind@mvpjoy.com">
               <button className="bg-[#5134FF] text-lg px-8 py-4 rounded-full text-white font-semibold shadow-lg shadow-[#5134ff]/20 hover:bg-opacity-90 active:scale-95 transition-all ">
-                Let's Connect →
+                Let&apos;s Connect →
               </button>
             </Link>
           </div>
