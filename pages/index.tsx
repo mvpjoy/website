@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           <p className="max-w-xl balanced  mt-6 text-lg text-slate-600">
-            15 days from now, you'll look back and be grateful you took the
+            15 days from now, you&apos;ll look back and be grateful you took the
             first step towards your MVP.
           </p>
           <div className="mt-10">
@@ -143,7 +143,7 @@ export default function Home() {
         <div
           className="h-10 bg-repeat-x -mt-10"
           style={{
-            backgroundImage: "url('/img/curvyBorderTop.svg')",
+            backgroundImage: "url(&apos;/img/curvyBorderTop.svg&apos;)",
           }}
         />
         <div className="bg-[#fff] py-20 transition-all duration-200 ease-in-out">
@@ -156,17 +156,17 @@ export default function Home() {
             </span>
             <br />
             <br />
-            It's like starting with a small, basic robot that can dance a
+            It&apos;s like starting with a small, basic robot that can dance a
             little, and if people like it, you can make it better.{" "}
             <span className="underline bg-yellow-100">
-              If not, you haven't wasted too much time or money.
+              If not, you haven&apos;t wasted too much time or money.
             </span>
           </p>
         </div>
         <div
           className="h-10 bg-repeat-x -mb-10 rotate-180"
           style={{
-            backgroundImage: "url('/img/curvyBorderTop.svg')",
+            backgroundImage: "url(&apos;/img/curvyBorderTop.svg&apos;)",
           }}
         />
       </div>
@@ -221,8 +221,8 @@ export default function Home() {
               <p className="mt-2 text-slate-600">
                 When the curtain rises, we shoot your product into the digital
                 universe with a launch more exciting than a rollercoaster ride.
-                Because it's not just about making the baby; it's about throwing
-                the ultimate baby shower!
+                Because it&apos;s not just about making the baby; it&apos;s
+                about throwing the ultimate baby shower!
               </p>
             </div>
           </div>
@@ -346,8 +346,8 @@ export default function Home() {
             </svg>
             <blockquote>
               <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
-                "MVPJoy is awesome, we were able to launch our product in very
-                short time, and there was no compromise in quality."
+                &quot;MVPJoy is awesome, we were able to launch our product in
+                very short time, and there was no compromise in quality.&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
