@@ -7,12 +7,8 @@ body {
   @apply scroll-smooth bg-[#f0f4f7];
 }
 
-.playfair {
-  font-family: "Playfair Display", serif;
-}
-
-.playFont {
-  font-family: 'Playfair Display', serif;
+.container {
+  @apply mx-auto px-4 md:px-0;
 }
 
 /* marquee */

@@ -51,56 +51,34 @@ export default function WorkSection() {
 
   return (
     <section className="my-16">
-      <div className="flex items-center flex-col md:flex-row max-w-4xl w-full mx-auto mb-20 md:space-x-14 space-y-10 md:space-y-0">
-        <div className="shrink-0 md:w-1/3 relative">
-          <img
-            loading="lazy"
-            alt={`${workInfo[currentWorkIndex].name} screenshot`}
-            src={workInfo[currentWorkIndex].cover}
-            className="rounded-lg relative z-[3]"
-          />
-
-          <div className="border-2 rounded-lg absolute bg-white w-full scale-95 z-[2] inset-y-0 left-4 inset-x-full" />
-          <div className="border-2 rounded-lg absolute bg-white w-full scale-90 z-[1] inset-y-0 left-8 inset-x-full" />
-        </div>
-        <div className="flex-1">
-          <div className="h-[30px] flex mb-8">
-            <Image
-              src={workInfo[currentWorkIndex].logo}
-              alt={`${workInfo[currentWorkIndex].name} logo`}
-              width={200}
-              height={140}
-              className="object-contain left-0"
+      {workInfo.map((work, index) => (
+        <div
+          className="flex items-center flex-col md:flex-row even:flex-row-reverse max-w-4xl w-full mx-auto mb-20 gap-10"
+          key={`work-${index}`}
+        >
+          <div className="shrink-0 md:w-1/3 relative">
+            <img
+              loading="lazy"
+              alt={`${work.name} screenshot`}
+              src={work.cover}
+              className="rounded-lg relative z-[3]"
             />
           </div>
+          <div className="flex-1">
+            <div className="h-[30px] flex mb-8">
+              <img src={work.logo} alt={`${work.name} logo`} />
+            </div>
 
-          <p className="mb-6 text-lg text-slate-600">
-            {workInfo[currentWorkIndex].description}
-          </p>
+            <p className="mb-6 text-lg text-slate-600">{work.description}</p>
 
-          {workInfo[currentWorkIndex].link && (
-            <Link
-              target="_blank"
-              rel="noreferrer"
-              href={workInfo[currentWorkIndex]?.link || ""}
-            >
-              <button className="btn-primary">Visit Site</button>
-            </Link>
-          )}
-
-          <div className="mt-10 flex space-x-2 justify-center">
-            {workInfo.map((work, index) => (
-              <span
-                className={`w-3 h-3 ${
-                  currentWorkIndex === index ? "bg-slate-600" : "bg-slate-300"
-                } rounded-full cursor-pointer`}
-                key={`pointer-${index}`}
-                onClick={() => setCurrentWorkIndex(index)}
-              />
-            ))}
+            {work.link && (
+              <Link target="_blank" rel="noreferrer" href={work?.link || ""}>
+                <button className="btn-primary">Visit Site</button>
+              </Link>
+            )}
           </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }
