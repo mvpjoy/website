@@ -29,7 +29,7 @@ export default function Home() {
         />
       </Head>
 
-      <header className="flex justify-between py-2 container mx-auto">
+      <header className="flex justify-between py-2 px-4 mx-auto sticky top-2">
         <div>
           <Image
             src="/logo.svg"
@@ -43,7 +43,7 @@ export default function Home() {
           <ul className="inline-flex flex-col gap-2 justify-end text-base">
             <li className="flex justify-end">
               <Link
-                className="inline-flex px-3 border-b py-1.5 rounded-xl bg-white shadow-sm gap-1.5 items-center"
+                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
                 href="/blog"
               >
                 <DocumentTextIcon className="w-5 h-5" /> Blog
@@ -51,7 +51,7 @@ export default function Home() {
             </li>
             <li className="flex justify-end">
               <Link
-                className="inline-flex px-3 border-b py-1.5 rounded-xl bg-white shadow-sm gap-1.5 items-center"
+                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
                 href="/#work"
               >
                 <BriefcaseIcon className="w-5 h-5" /> Work
@@ -59,7 +59,7 @@ export default function Home() {
             </li>
             <li className="flex justify-end">
               <Link
-                className="inline-flex px-3 border-b py-1.5 rounded-xl bg-white shadow-sm gap-1.5 items-center"
+                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
                 href="/#about"
               >
                 <QuestionMarkCircleIcon className="w-5 h-5" /> About
@@ -75,63 +75,70 @@ export default function Home() {
         <button>Get Started</button>
       </div> */}
 
-      <section className="pb-10 flex flex-col gap-10 justify-center items-center container mx-auto text-center md:text-left">
-        {/* <aside className="flex-1 items-center relative justify-center hidden md:flex ">
-          <img
-            src="/img/shapeBg.svg"
-            className="absolute w-[450px] scale-150"
-          />
-          <div className="w-full max-w-[300px] bg-white group squircle py-10 shadow-black/5 h-screen max-h-[500px] rounded-3xl flex flex-col items-center justify-center">
-            <div className="text-center pt-10 grayscale group-hover:grayscale-0">
-              <img
-                src="/img/bulb.svg"
-                className="transition-scale duration-300 ease-in-out scale-90 group-hover:scale-100"
-              />
-            </div>
-            <div className="flex-1 flex items-center">
-              <div>
-                <h3 className="font-regular text-base text-center">
-                  Starting From
-                </h3>
-                <h1 className="text-6xl font-bold playFont">$3,999</h1>
-              </div>
-            </div>
-            <div>
-              <div className="bg-black rounded-full flex items-center justify-center w-14 h-14">
-                <ArrowRightIcon className="w-8 h-8 text-white mx-auto" />
-              </div>
-            </div>
-          </div>
-          <img
-            src="/img/shape.svg"
-            className="absolute w-[200px] top-0 right-10 mix-blend-multiply"
-          />
-        </aside> */}
-        <div className="my-10 md:my-14">
+      <section className="pb-10 flex flex-col gap-10 justify-center items-center container mx-auto text-center md:text-left -mt-40">
+        <div className="my-10 md:my-14 text-center">
+          <svg
+            width="142"
+            height="132"
+            viewBox="0 0 142 132"
+            className="mx-auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.49977 130C2.49977 126.184 2.21217 122.55 3.77755 118.972C5.3002 115.492 6.67724 111.701 7.49977 108C8.79145 102.187 11.1543 96.6882 12.7498 90.9444C15.272 81.8645 17.5621 72.5215 22.4998 64.3889C26.2655 58.1866 30.1346 52.2499 33.9998 46.1111C37.467 40.6044 40.5827 34.4171 45.2498 29.75C48.7328 26.267 50.7054 21.4234 54.7498 18.2778C56.2698 17.0955 58.0071 16.2705 59.3887 14.8889C61.3039 12.9737 63.1078 10.5181 65.4998 9.11111C68.221 7.5104 69.5445 3.47761 72.4998 2"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M73 2C77.0403 6.04033 82.0513 8.8291 86.1111 12.8889C87.827 14.6048 89.4682 16.4682 91.25 18.25C93.5564 20.5564 96.1515 22.7071 98.4722 25.0278C100.565 27.1206 102.001 30.8785 103.389 33.5C104.536 35.667 106.258 37.7383 107.389 40C109.145 43.5128 112.383 46.1127 114 49.75C114.611 51.1249 115.832 52.6055 116.722 53.75C117.661 54.9573 118.04 56.5494 119 57.75C121.153 60.4407 121.214 64.5973 123 67.6111C125.068 71.101 126.095 75.0816 127.75 78.7222C128.975 81.418 129.442 84.3688 130.611 87C131.94 89.9891 133.5 94.346 133.5 97.6111C133.5 100.296 134.786 103.376 135.472 105.778C136.304 108.688 136.372 111.801 137.028 114.75C137.488 116.821 137.659 121.573 138.889 123.111C140.031 124.539 139.172 129.836 140.5 130.5"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M63.9998 72.5C61.8726 72.7364 60.2183 76.3408 59.3887 78C58.1632 80.451 57.4998 81.886 57.4998 84.75C57.4998 89.5968 56.6583 94.7395 59.7776 98.75C62.5718 102.343 69.4713 106 73.9998 106C78.9763 106 85.7318 106.99 89.611 103.111C93.1946 99.5275 92.9998 94.4404 92.9998 89.75C92.9998 84.9308 92.3678 80.1229 87.7776 77.5C86.3084 76.6605 84.3337 75.4882 82.7221 75.0278C80.7123 74.4536 78.8923 72.7366 76.9998 72.5C74.8961 72.237 73.1607 71.5 70.7498 71.5C68.7696 71.5 66.25 71 63.9998 71"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+
           <div className="leading-loose">
             <h1
-              className={`text-5xl playFont md:text-6xl xl:text-8xl max-w-5xl mx-auto font-semibold`}
+              className={`text-5xl playFont md:text-7xl max-w-5xl mx-auto font-bold text-white`}
             >
-              Ready, Set,
-              <br />
-              <span className="relative inline-flex flex-col text-[#055192]">
-                Launch!
-                <img src="/img/underline.svg" className="h-10 mx-auto" />
-              </span>
+              Ready, Set, <br />
+              Launch!
             </h1>
           </div>
 
-          <p className="max-w-xl balanced  mt-6 text-lg text-slate-600">
+          <p className="max-w-xl balanced  mt-6 text-lg text-white/50 mx-auto">
             15 days from now, you&apos;ll look back and be grateful you took the
             first step towards your MVP.
           </p>
-          <div className="mt-10">
+          <div className="mt-6">
             <Link href="#work">
-              <button className="btn btn-lg bg-blue-500 text-white">
-                See our work ↓
-              </button>
+              <button className="btn btn-lg ">See our work ↓</button>
             </Link>
           </div>
+
+          <svg
+            width="119"
+            height="94"
+            viewBox="0 0 119 94"
+            fill="none"
+            className="mx-auto mt-3"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.5 5C1.5 8.37037 1.5 11.7407 1.5 15.1111C1.5 19.0268 2.79185 23.0451 3 27C3.15273 29.9019 4 32.8997 4 35.8889C4 38.9986 4.47697 42.9252 5.38889 45.8889C6.9747 51.0428 6.40089 55.1207 11.1111 58.8889C12.9154 60.3323 15.1696 60 17.5 60C19.4777 60 21.6071 56.6707 22.8889 55.3889C24.6206 53.6571 26.2218 51.7782 28 50C30.2349 47.7651 30.4945 45.4218 32.3889 49C35.1331 54.1834 37.284 60.284 41.5 64.5C46.8482 69.8482 50.0695 77.7241 54 84.1111C55.3791 86.3522 56.1664 89.0585 58 91C59.4779 92.5648 64.0213 92.5668 65.75 91.2222C70.4453 87.5703 72.8075 81.2414 74.0278 75.75C74.6003 73.1738 76.3976 70.8357 76.9722 68.25C77.4689 66.0149 79.1072 62.8071 80.25 60.75C83.0466 55.7162 84.7224 48.8331 88.7778 44.7778C90.0021 43.5535 98.6631 56.5906 100.75 57.75C102.822 58.9008 105.928 58.1537 107 56.2778C107.49 55.4201 108.401 54.9207 108.889 54C109.215 53.3837 109.882 51.2945 110.25 51C111.249 50.2009 111.5 45.0945 111.5 43.75C111.5 40.8248 113 37.6588 113 34.75C113 31.6916 114 28.7107 114 25.75C114 23.0277 114.375 19.4353 114.972 16.75C116.078 11.7727 115.382 6.35327 117 1.5"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
       </section>
       {/* 
@@ -139,14 +146,14 @@ export default function Home() {
             <Marquee />
           </section> */}
 
-      <div className="group">
+      <div className="group hidden">
         <div
           className="h-10 bg-repeat-x -mt-10"
           style={{
             backgroundImage: "url(&apos;/img/curvyBorderTop.svg&apos;)",
           }}
         />
-        <div className="bg-[#fff] py-20 transition-all duration-200 ease-in-out">
+        <div className=" py-20 transition-all duration-200 ease-in-out">
           <h2 className="text-center text-5xl playFont">What is an MVP?</h2>
 
           <p className="text-xl max-w-4xl mx-auto mt-6 text-center ">
@@ -171,21 +178,7 @@ export default function Home() {
         />
       </div>
 
-      <svg width="10" height="10" viewBox="0 0 10 10">
-        <clipPath
-          id="squircleClip"
-          clipPathUnits="objectBoundingBox"
-          className="shadow-lg"
-        >
-          <path
-            fill="red"
-            stroke="none"
-            d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"
-          />
-        </clipPath>
-      </svg>
-
-      <div className="py-20 bg-[#f0f4f7]">
+      <div className="py-20 ">
         <section
           className="container mx-auto"
           // add dotted background
@@ -196,7 +189,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
             <div>
-              <DocumentTextIcon className="w-10 h-10 text-[#5134FF] mb-6" />
+              <div className="w-20 h-20 relative ">
+                <DocumentTextIcon className="w-20 h-20 text-white mb-6" />
+                <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
+              </div>
+
               <h3>Research</h3>
               <p className="mt-2 text-slate-600">
                 We dig deep into your product and spy on the competition. Then
@@ -207,7 +204,11 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <CommandLineIcon className="w-10 h-10 text-[#5134FF] mb-6" />
+              <div className="w-20 h-20 relative ">
+                <CommandLineIcon className="w-20 h-20 text-white mb-6" />
+                <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
+              </div>
+
               <h3>Develop</h3>
               <p className="mt-2 text-slate-600">
                 Our crack team of designers and developers work like caffeinated
@@ -216,7 +217,11 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <RocketLaunchIcon className="w-10 h-10 text-[#5134FF] mb-6" />
+              <div className="w-20 h-20 relative ">
+                <RocketLaunchIcon className="w-20 h-20 text-white mb-6" />
+                <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
+              </div>
+
               <h3>Launch</h3>
               <p className="mt-2 text-slate-600">
                 When the curtain rises, we shoot your product into the digital
@@ -230,7 +235,7 @@ export default function Home() {
       </div>
 
       <section
-        className="container mx-auto my-10 py-10 px-4 bg-gradient-to-b from-white/60 to-white/30 border shadow border-white/70 rounded-3xl"
+        className="container mx-auto my-10 py-10 px-4 bg-gradient-to-b from-white/5 to-transparent shadow rounded-3xl"
         id="work"
       >
         <h2 className="text-center">Our Work</h2>
@@ -281,7 +286,7 @@ export default function Home() {
           <h2 className="text-center">Pricing</h2>
 
           <div className="flex justify-center my-10">
-            <div className="w-full max-w-[350px] bg-white group squircle py-10 shadow-black/5 h-screen max-h-[600px] rounded-3xl flex flex-col gap-10 items-center justify-center">
+            <div className="w-full max-w-[350px] bg-white/5 group squircle py-10 shadow-black/5 h-screen max-h-[600px] rounded-3xl flex flex-col gap-10 items-center justify-center">
               <div className="flex items-center">
                 <div className="flex-1 items-center">
                   <div>

@@ -4,7 +4,9 @@
 
 html,
 body {
-  @apply scroll-smooth bg-[#f0f4f7];
+  @apply scroll-smooth bg-[#131313];
+  font-family: 'Manrope', sans-serif;
+  color: #fff;
 }
 
 .container {
@@ -48,6 +50,7 @@ body {
 
 button {
   @apply px-6 py-2.5 rounded-full bg-gray-100 text-black;
+  box-shadow: 0 4px 0 0 rgba(255,255,255,0.5);
 }
 
 .btn-pill {
@@ -59,9 +62,9 @@ button {
 }
 
 h2 {
-  @apply text-4xl font-bold text-gray-800;
+  @apply text-4xl font-bold ;
 }
 
 h3 {
-  @apply text-2xl font-bold text-gray-800;
+  @apply text-2xl font-bold ;
 }
