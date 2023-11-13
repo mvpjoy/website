@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 const workInfo = [
   {
@@ -47,8 +45,6 @@ const workInfo = [
 ];
 
 export default function WorkSection() {
-  const [currentWorkIndex, setCurrentWorkIndex] = useState(0);
-
   return (
     <section className="my-16">
       {workInfo.map((work, index) => (
@@ -65,11 +61,8 @@ export default function WorkSection() {
             />
           </div>
           <div className="flex-1">
-            <div className="h-[30px] flex mb-8">
-              <img src={work.logo} alt={`${work.name} logo`} />
-            </div>
-
-            <p className="mb-6 text-lg text-slate-600">{work.description}</p>
+            <h3>{work.name}</h3>
+            <p className="mb-6 text-lg text-white/40">{work.description}</p>
 
             {work.link && (
               <Link target="_blank" rel="noreferrer" href={work?.link || ""}>

@@ -189,41 +189,41 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
             <div>
-              <div className="w-20 h-20 relative ">
+              <div className="w-20 h-20 relative -mb-6">
                 <DocumentTextIcon className="w-20 h-20 text-white mb-6" />
                 <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
               </div>
 
-              <h3>Research</h3>
-              <p className="mt-2 text-slate-600">
+              <h3 className="relative z-10">Research</h3>
+              <p className="mt-2 text-white/40">
                 We dig deep into your product and spy on the competition. Then
                 we whip up a genius plan.
               </p>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-white/40">
                 Write it down share it with you and move to next step
               </p>
             </div>
             <div>
-              <div className="w-20 h-20 relative ">
+              <div className="w-20 h-20 relative -mb-6">
                 <CommandLineIcon className="w-20 h-20 text-white mb-6" />
                 <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
               </div>
 
-              <h3>Develop</h3>
-              <p className="mt-2 text-slate-600">
+              <h3 className="relative z-10">Develop</h3>
+              <p className="mt-2 text-white/40">
                 Our crack team of designers and developers work like caffeinated
                 squirrels to make your brand shine, all without sacrificing
                 quality or speed.
               </p>
             </div>
             <div>
-              <div className="w-20 h-20 relative ">
+              <div className="w-20 h-20 relative -mb-6">
                 <RocketLaunchIcon className="w-20 h-20 text-white mb-6" />
                 <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#131313] to-transparent" />
               </div>
 
-              <h3>Launch</h3>
-              <p className="mt-2 text-slate-600">
+              <h3 className="relative z-10">Launch</h3>
+              <p className="mt-2 text-white/40">
                 When the curtain rises, we shoot your product into the digital
                 universe with a launch more exciting than a rollercoaster ride.
                 Because it&apos;s not just about making the baby; it&apos;s
@@ -242,51 +242,12 @@ export default function Home() {
         <WorkSection />
       </section>
 
-      <section className="my-20 flex flex-col lg:flex-row gap-10 w-full container items-center">
-        {/* FAQ */}
-        <div className="flex-1 order-2 lg:order-1">
-          <div className=" pt-8 text-left md:gap-16 dark:border-gray-700 ">
-            <div>
-              <div className="mb-10">
-                <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-                  <QuestionMarkCircleIcon className="w-5 h-5" />
-                  What tech stack do you use?
-                </h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  We use React, Next.js, TailwindCSS, and/or Supabase,
-                  Pocketbase, MongoDb or PostgreSQL for our projects.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-                  <QuestionMarkCircleIcon className="w-5 h-5" />
-                  We know nothing about tech, can you still help us?
-                </h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Yes, we can. We will help you with everything from buying a
-                  domain name to launching your product and everything in
-                  between.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-                  <QuestionMarkCircleIcon className="w-5 h-5" />
-                  Can it take longer than 15 days?
-                </h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  It totally depends on the complexity of the project. We will
-                  give you a timeline before starting the project.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* pricing */}
-        <div className="w-full max-w-[350px] order-1 lg:order-2">
+      <section className="my-20 container">
+        <div className="w-full order-1 lg:order-2">
           <h2 className="text-center">Pricing</h2>
 
           <div className="flex justify-center my-10">
-            <div className="w-full max-w-[350px] bg-white/5 group squircle py-10 shadow-black/5 h-screen max-h-[600px] rounded-3xl flex flex-col gap-10 items-center justify-center">
+            <div className="w-full bg-white/5 group squircle p-20 shadow-black/5 rounded-3xl flex gap-10 items-center justify-between">
               <div className="flex items-center">
                 <div className="flex-1 items-center">
                   <div>
@@ -298,7 +259,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-                <div>
+                <div className="flex gap-10">
                   <ul className="flex flex-col gap-2">
                     <li className="flex gap-1.5">
                       <CheckCircleIcon className="w-6 h-6 text-green-500" />
@@ -312,6 +273,8 @@ export default function Home() {
                       <CheckCircleIcon className="w-6 h-6 text-green-500" />
                       Post launch help
                     </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2">
                     <li className="flex gap-1.5">
                       <CheckCircleIcon className="w-6 h-6 text-green-500" />
                       No unnecessary meetings
@@ -337,11 +300,51 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* testimonials */}
+      </section>
+
+      <section className="max-w-2xl mx-auto">
+        <h2>FAQ</h2>
+        <div className="flex-1 order-2 lg:order-1">
+          <div className=" pt-8 text-left md:gap-16 dark:border-gray-700 ">
+            <div>
+              <div className="mb-10">
+                <h3 className="flex items-center mb-4 text-lg font-medium">
+                  What tech stack do you use?
+                </h3>
+                <p className="text-white/40">
+                  We use React, Next.js, TailwindCSS, and/or Supabase,
+                  Pocketbase, MongoDb or PostgreSQL for our projects.
+                </p>
+              </div>
+              <div className="mb-10">
+                <h3 className="flex items-center mb-4 text-lg font-medium">
+                  We know nothing about tech, can you still help us?
+                </h3>
+                <p className="text-white/40">
+                  Yes, we can. We will help you with everything from buying a
+                  domain name to launching your product and everything in
+                  between.
+                </p>
+              </div>
+              <div className="mb-10">
+                <h3 className="flex items-center mb-4 text-lg font-medium">
+                  Can it take longer than 15 days?
+                </h3>
+                <p className="text-white/40">
+                  It totally depends on the complexity of the project. We will
+                  give you a timeline before starting the project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="my-40 relative flex flex-col lg:flex-row gap-10 w-full container items-center bg-gradient-to-b from-white/5 to-transparent p-20 rounded-3xl">
         <div className="flex-1 order-3">
           <figure className="max-w-screen-md mx-auto text-center">
             <svg
-              className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              className="w-10 h-10 mx-auto mb-3 text-white/40"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -350,7 +353,7 @@ export default function Home() {
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
             <blockquote>
-              <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
+              <p className="text-2xl italic font-medium text-white ">
                 &quot;MVPJoy is awesome, we were able to launch our product in
                 very short time, and there was no compromise in quality.&quot;
               </p>
@@ -361,11 +364,11 @@ export default function Home() {
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                 alt="profile picture"
               />
-              <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                <cite className="pr-3 font-medium text-gray-900 dark:text-white">
+              <div className="flex items-center divide-x-2 divide-white/40">
+                <cite className="pr-3 font-medium text-white ">
                   Jatin Walia
                 </cite>
-                <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
+                <cite className="pl-3 text-sm text-white/40 ">
                   Co-Founder at Tuicus
                 </cite>
               </div>
@@ -378,7 +381,7 @@ export default function Home() {
         <h2 className="text-center">Who is behind MVPJoy?</h2>
 
         <div className="flex gap-10 max-w-3xl mx-auto w-full items-center mt-10">
-          <div className="text-center text-gray-500 dark:text-gray-400 shrink-0">
+          <div className="text-center text-white/40 shrink-0">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
@@ -386,10 +389,10 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-white">
               <a href="#">Arvind Singh</a>
             </h3>
-            <p className="text-slate-500">Indie Hacker</p>
+            <p className="text-white/40">Indie Hacker</p>
             <p className="text-lg mt-2">
               I am a self-taught developer and designer. I have been building
               MVPs for startups since 2018. I have worked with 100+ startups
