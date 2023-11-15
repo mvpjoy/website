@@ -1,17 +1,14 @@
-import { Layout, WorkSection } from "@/components";
+import { Header, Layout, WorkSection } from "@/components";
 import { Inter } from "next/font/google";
 import {
   ArrowRightIcon,
-  BriefcaseIcon,
   CheckCircleIcon,
   CommandLineIcon,
   DocumentTextIcon,
-  QuestionMarkCircleIcon,
   RocketLaunchIcon,
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 
 const inter = Inter({
   weight: "500",
@@ -29,54 +26,10 @@ export default function Home() {
         />
       </Head>
 
-      <header className="flex justify-between py-2 px-4 mx-auto sticky top-2">
-        <div>
-          <Image
-            src="/logo.svg"
-            className="mx-auto md:mx-0"
-            alt="logo"
-            width={140}
-            height={37}
-          />
-        </div>
-        <div className="">
-          <ul className="inline-flex flex-col gap-2 justify-end text-base">
-            <li className="flex justify-end">
-              <Link
-                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
-                href="/blog"
-              >
-                <DocumentTextIcon className="w-5 h-5" /> Blog
-              </Link>
-            </li>
-            <li className="flex justify-end">
-              <Link
-                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
-                href="/#work"
-              >
-                <BriefcaseIcon className="w-5 h-5" /> Work
-              </Link>
-            </li>
-            <li className="flex justify-end">
-              <Link
-                className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
-                href="/#about"
-              >
-                <QuestionMarkCircleIcon className="w-5 h-5" /> About
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </header>
+      <Header />
 
-      {/* <div className="fixed flex flex-col gap-3 top-0 right-20 bg-white w-[250px] p-4 rounded-b-3xl shadow-lg z-10 text-center">
-        <p>Starting From</p>
-        <h3 className="playFont">$3,999</h3>
-        <button>Get Started</button>
-      </div> */}
-
-      <section className="pb-10 flex flex-col gap-10 justify-center items-center container mx-auto text-center md:text-left -mt-40">
-        <div className="my-10 md:my-14 text-center">
+      <section className="pb-10 flex flex-col gap-10 justify-center items-center container mx-auto text-center md:text-left -mt-10">
+        <div className="my-10 md:my-14 text-center relative z-10">
           <svg
             width="142"
             height="132"
@@ -114,7 +67,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <p className="max-w-xl balanced  mt-6 text-lg text-white/50 mx-auto">
+          <p className="max-w-xl balanced  mt-6 text-xl text-white/50 mx-auto">
             15 days from now, you&apos;ll look back and be grateful you took the
             first step towards your MVP.
           </p>
@@ -140,11 +93,14 @@ export default function Home() {
             />
           </svg>
         </div>
+
+        <div className="absolute circqle-2 hidden md:flex" />
+        <div className="absolute circqle-1 hidden md:flex" />
       </section>
-      {/* 
-          <section>
-            <Marquee />
-          </section> */}
+
+      {/* <section>
+        <Marquee />
+      </section> */}
 
       <div className="group hidden">
         <div
@@ -179,10 +135,7 @@ export default function Home() {
       </div>
 
       <div className="py-20 ">
-        <section
-          className="container mx-auto"
-          // add dotted background
-        >
+        <section className="container mx-auto">
           <h2 className={`text-3xl text-center playFont`}>
             What is our approach of building an MVP?
           </h2>
@@ -242,67 +195,65 @@ export default function Home() {
         <WorkSection />
       </section>
 
-      <section className="my-20 container">
+      <section className="my-20 container" id="pricing">
         <div className="w-full order-1 lg:order-2">
-          <h2 className="text-center">Pricing</h2>
+          <h2 className="text-center mb-6">Pricing</h2>
 
-          <div className="flex justify-center my-10">
-            <div className="w-full bg-white/5 group squircle p-20 shadow-black/5 rounded-3xl flex gap-10 items-center justify-between">
-              <div className="flex items-center">
-                <div className="flex-1 items-center">
-                  <div>
-                    <h3 className="font-regular text-base text-center">
-                      Starting From
-                    </h3>
-                    <h1 className="text-6xl font-bold playFont">$3,999</h1>
-                  </div>
+          <div className="w-full bg-white/5 group squircle p-10 md:p-20 shadow-black/5 rounded-3xl flex flex-col md:flex-row gap-10 items-center justify-between">
+            <div className="flex items-center">
+              <div className="flex-1 items-center">
+                <div>
+                  <h3 className="font-regular text-base text-center">
+                    Starting From
+                  </h3>
+                  <h1 className="text-6xl font-bold playFont">$3,999</h1>
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
-                <div className="flex gap-10">
-                  <ul className="flex flex-col gap-2">
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      Mobile app or Website
-                    </li>
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      Unlimited revisions
-                    </li>
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      Post launch help
-                    </li>
-                  </ul>
-                  <ul className="flex flex-col gap-2">
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      No unnecessary meetings
-                    </li>
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      No hidden charges
-                    </li>
-                    <li className="flex gap-1.5">
-                      <CheckCircleIcon className="w-6 h-6 text-green-500" />
-                      Market stadndard product
-                    </li>
-                  </ul>
+            </div>
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-col md:flex-row gap-2 md:gap-10">
+                <ul className="flex flex-col gap-2">
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    Mobile app or Website
+                  </li>
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    Unlimited revisions
+                  </li>
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    Post launch help
+                  </li>
+                </ul>
+                <ul className="flex flex-col gap-2">
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    No unnecessary meetings
+                  </li>
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    No hidden charges
+                  </li>
+                  <li className="flex gap-1.5">
+                    <CheckCircleIcon className="w-6 h-6 text-green-500" />
+                    Market stadndard product
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <Link href="mailto:heyarviind@gmail.com">
+                <div className="bg-black rounded-full flex items-center justify-center w-14 h-14">
+                  <ArrowRightIcon className="w-8 h-8 text-white mx-auto" />
                 </div>
-              </div>
-              <div>
-                <Link href="mailto:heyarviind@gmail.com">
-                  <div className="bg-black rounded-full flex items-center justify-center w-14 h-14">
-                    <ArrowRightIcon className="w-8 h-8 text-white mx-auto" />
-                  </div>
-                </Link>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="max-w-2xl mx-auto">
+      <section className="max-w-2xl mx-auto px-4 md:px-0">
         <h2>FAQ</h2>
         <div className="flex-1 order-2 lg:order-1">
           <div className=" pt-8 text-left md:gap-16 dark:border-gray-700 ">
@@ -380,7 +331,7 @@ export default function Home() {
       <section id="about">
         <h2 className="text-center">Who is behind MVPJoy?</h2>
 
-        <div className="flex gap-10 max-w-3xl mx-auto w-full items-center mt-10">
+        <div className="flex flex-col md:flex-row text-center md:text-left gap-10 max-w-3xl mx-auto w-full items-center mt-10">
           <div className="text-center text-white/40 shrink-0">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
@@ -469,7 +420,7 @@ export default function Home() {
 
 function Marquee() {
   return (
-    <div className="marquee text-lg font-semibold uppercase px-2 bg-yellow-100 py-2.5 text-black rotate-3">
+    <div className="marquee text-lg font-semibold uppercase px-2 bg-yellow-50 py-2.5 text-black rotate-3">
       <span className="marquee--inner flex items-center gap-4">
         Say goodbye to endless development cycles and hello to a fully
         functional product{" "}
