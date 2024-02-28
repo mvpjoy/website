@@ -335,8 +335,8 @@ export default function Home() {
           <div className="text-center text-white/40 shrink-0">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-              alt="Bonnie Avatar"
+              src="https://pbs.twimg.com/profile_images/1737369153999392768/aMmQitPN_400x400.jpg"
+              alt="Arvind Singh"
             />
           </div>
           <div>
