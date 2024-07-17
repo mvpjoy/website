@@ -62,7 +62,7 @@ export default function Header() {
             <li className="flex justify-end">
               <Link
                 className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
-                href="mailto:hr@mvpjoy.com"
+                href="mailto:marketing@mvpjoy.com"
               >
                 <EnvelopeIcon className="w-5 h-5" /> Contact
               </Link>
