@@ -26,7 +26,7 @@ export default function Home() {
         />
       </Head>
 
-        
+
 
       <Header />
 
@@ -188,6 +188,42 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <section className="my-40 relative flex flex-col lg:flex-row gap-10 w-full container items-center bg-gradient-to-b from-white/5 to-transparent p-20 rounded-3xl">
+        <div className="flex-1 order-3">
+          <figure className="max-w-screen-md mx-auto text-center">
+            <svg
+              className="w-10 h-10 mx-auto mb-3 text-white/40"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 14"
+            >
+              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+            <blockquote>
+              <p className="text-2xl italic font-medium text-white ">
+                &quot;We were looking for a professional web development team to partner with. Their instant reply to my enquiry and level of thought made them stand out on our shortlist. We were inspired by their clear, concise, and timely communication with us.&quot;
+              </p>
+            </blockquote>
+            <figcaption className="flex items-center justify-center mt-6 space-x-3">
+              <img
+                className="w-6 h-6 rounded-full"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                alt="profile picture"
+              />
+              <div className="flex items-center divide-x-2 divide-white/40">
+                <cite className="pr-3 font-medium text-white ">
+                  Ghrisham Goyal
+                </cite>
+                <cite className="pl-3 text-sm text-white/40 ">
+                  Project Manager, Giotech IT Support London
+                </cite>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
       <section
         className="container mx-auto my-10 py-10 px-4 bg-gradient-to-b from-white/5 to-transparent shadow rounded-3xl"
