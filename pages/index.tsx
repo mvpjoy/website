@@ -281,7 +281,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <Link href="mailto:heyarviind@gmail.com">
+              <Link href="mailto:marketing@mvpjoy.com">
                 <div className="bg-black rounded-full flex items-center justify-center w-14 h-14">
                   <ArrowRightIcon className="w-8 h-8 text-white mx-auto" />
                 </div>
