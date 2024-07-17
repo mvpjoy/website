@@ -209,12 +209,12 @@ export default function Home() {
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
               <img
                 className="w-6 h-6 rounded-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fgrishma-mody-4b3012102&psig=AOvVaw1p8NR1uUXiMG9u3tZEp-e-&ust=1721310488535000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC9zLWbrocDFQAAAAAdAAAAABAh"
                 alt="profile picture"
               />
               <div className="flex items-center divide-x-2 divide-white/40">
                 <cite className="pr-3 font-medium text-white ">
-                  Ghrisham Goyal
+                  Grisham Goyal
                 </cite>
                 <cite className="pl-3 text-sm text-white/40 ">
                   Project Manager, Giotech IT Support London
