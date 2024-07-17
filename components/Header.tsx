@@ -18,6 +18,9 @@ export default function Header() {
           <span className="flex items-center gap-1">
             <PhoneIcon className="w-5 h-5" />
             +91 720 626 4120</span>
+            <span className="flex items-center gap-1">
+            <EnvelopeIcon className="w-5 h-5" />
+            marketing@mvpjoy.com</span>
           <span className="flex items-center gap-1">
             <EnvelopeIcon className="w-5 h-5" />
             hr@mvpjoy.com</span>
