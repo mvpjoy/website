@@ -20,7 +20,7 @@ export default function Header() {
             +91 720 626 4120</span>
           <span className="flex items-center gap-1">
             <EnvelopeIcon className="w-5 h-5" />
-            hr@mvpjoy.com</span>
+            marketing@mvpjoy.com</span>
         </div>
       </div>
       {/* <div className="gradient-blur">
@@ -81,7 +81,7 @@ export default function Header() {
                 <div className="grid grid-cols-2 gap-4">
                   <Link href="/#work">Work</Link>
                   <Link href="/#pricing">Pricing</Link>
-                  <Link href="mailto:hr@mvpjoy.com">Contact</Link>
+                  <Link href="mailto:marketing@mvpjoy.com">Contact</Link>
                 </div>
 
                 <img src="/solutions.jpg" alt="" />
