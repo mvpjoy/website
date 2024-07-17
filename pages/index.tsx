@@ -211,7 +211,7 @@ export default function Home() {
             </svg>
             <blockquote>
               <p className="text-2xl italic font-medium text-white ">
-                &quot;Very accommodating, highly skilled in bringing my project to life—I'm thoroughly impressed and definitely look forward to collaborating with them again. Their attention to detail and willingness to assist with every aspect make them the ideal partner for any project.&quot;
+                &quot;Very accommodating, highly skilled in bringing my project to life — I&apos;m thoroughly impressed and definitely look forward to collaborating with them again. Their attention to detail and willingness to assist with every aspect make them the ideal partner for any project.&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
