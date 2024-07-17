@@ -26,6 +26,8 @@ export default function Home() {
         />
       </Head>
 
+        
+
       <Header />
 
       <section className="pb-10 flex flex-col gap-10 justify-center items-center container mx-auto text-center md:text-left -mt-10">

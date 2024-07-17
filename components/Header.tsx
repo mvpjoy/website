@@ -11,6 +11,13 @@ import { Popover } from "@headlessui/react";
 export default function Header() {
   return (
     <>
+    <div className="bg-black p-2 flex items-center justify-center text-white text-sm">
+      <div></div>
+      <div className="flex gap-10">
+        <span>+91 720 626 4120</span>
+        <span>hr@mvpjoy.com</span>
+      </div>
+    </div>
       <div className="gradient-blur">
         <div></div>
         <div></div>
@@ -31,14 +38,14 @@ export default function Header() {
         </div>
         <div className="">
           <ul className="gap-2 justify-end text-base hidden md:inline-flex">
-            <li className="flex justify-end">
+            {/* <li className="flex justify-end">
               <Link
                 className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
                 href="/blog"
               >
                 <DocumentTextIcon className="w-5 h-5" /> Blog
               </Link>
-            </li>
+            </li> */}
             <li className="flex justify-end">
               <Link
                 className="inline-flex px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 gap-1.5 items-center"
