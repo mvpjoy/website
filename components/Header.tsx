@@ -14,11 +14,11 @@ export default function Header() {
   return (
     <>
       <div className="bg-black p-2 flex items-center justify-end text-white text-sm">
-        <div className="flex gap-10">
-          <span className="flex items-center gap-0.5">
+        <div className="flex gap-4">
+          <span className="flex items-center gap-1">
             <PhoneIcon className="w-5 h-5" />
             +91 720 626 4120</span>
-          <span className="flex items-center gap-0.5">
+          <span className="flex items-center gap-1">
             <EnvelopeIcon className="w-5 h-5" />
             hr@mvpjoy.com</span>
         </div>
